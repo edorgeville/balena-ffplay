@@ -6,3 +6,7 @@ assets:
     type: "blob.asset"
     data:
       url: "https://github.com/edorgeville/balena-ffplay"
+data:
+  applicationEnvironmentVariables:
+    - RTSP_URI: ""
+    - CURSOR_URI: "false"
