@@ -6,4 +6,4 @@ while ! xset -q; do sleep 0.5; done
 
 "X11 is available, starting"
 
-ffplay -rtsp_transport tcp ${RTSP_URI}
+ffplay -fflags nobuffer -rtsp_transport tcp ${RTSP_URI}
