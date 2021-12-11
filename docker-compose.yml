@@ -7,6 +7,9 @@ services:
   ffplay:
     build: .
     privileged: true
+    environment:
+      RTSP_URI:
+      CURSOR: "false"
     devices:
       - /dev/dri
     group_add:

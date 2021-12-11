@@ -5,7 +5,6 @@ RUN install_packages ffmpeg
 COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
 
-ENV RTSP_URI=changeme
 ENV DISPLAY=:0
 
 CMD [ "./entrypoint.sh" ]

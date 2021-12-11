@@ -1,0 +1,8 @@
+name: "balena-ffplay"
+description: "Simple balena application to display an RTSP stream"
+type: "sw.application"
+assets:
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/edorgeville/balena-ffplay"
