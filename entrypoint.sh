@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Waiting for X11 on port /tmp/.X11-unix/X${DISPLAY#*:}"
+echo "Waiting for X11 on socket /tmp/.X11-unix/X${DISPLAY#*:}"
 
-while [ ! -e /tmp/.X11-unix/X${DISPLAY#*:} ]; do echo "."; sleep 0.5; done
+while ! xset -q; do sleep 0.5; done
 
-"X11 is available, starting app"
+"X11 is available, starting"
 
 ffplay -rtsp_transport tcp ${RTSP_URI}
